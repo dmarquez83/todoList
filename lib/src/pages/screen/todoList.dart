@@ -40,10 +40,12 @@ class _TodoListScreenState extends State<TodoListScreen> {
         todos: todos,
         onTodoToggle: _toggleTodo,
       ),
+      backgroundColor: Colors.blueGrey,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: _addTodo,
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
