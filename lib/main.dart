@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:lista_de_tareas/src/pages/todo_list.dart';
-import 'package:lista_de_tareas/src/pages/home_page.dart';
+import 'package:lista_de_tareas/src/pages/todo_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +9,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         //para desactivar el banner lateral morado
         debugShowCheckedModeBanner: false,
-        title: 'Mi Lista de tareas',
-        home: TodoList());
+        title: 'Mi Lista de tareas Ckeck',
+        theme: ThemeData(
+          primaryColor: Colors.red.shade800,
+          accentColor: Colors.red.shade600,
+        ),
+        home: TodoListScreen());
   }
 }
