@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lista_de_tareas/src/pages/todo.dart';
-
-import 'package:lista_de_tareas/src/pages/dialog.dart';
-
-import 'package:lista_de_tareas/src/pages/checkList.dart';
+import 'package:lista_de_tareas/src/pages/class/todo.dart';
+import 'package:lista_de_tareas/src/pages/component/dialog.dart';
+import 'package:lista_de_tareas/src/pages/component/checkList.dart';
 
 class TodoListScreen extends StatefulWidget {
   @override
@@ -37,7 +35,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Mis Tareas')),
+      appBar: AppBar(title: Text('Mi Lista de Tareas')),
       body: TodoList(
         todos: todos,
         onTodoToggle: _toggleTodo,
