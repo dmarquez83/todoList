@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Mi Lista de tareas Ckeck',
         theme: ThemeData(
-          primaryColor: Colors.red.shade800,
-          accentColor: Colors.red.shade600,
+          primaryColor: Colors.purple.shade800,
+          accentColor: Colors.purple.shade600,
         ),
         home: TodoListScreen());
   }
