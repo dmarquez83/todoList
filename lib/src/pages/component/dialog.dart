@@ -17,7 +17,8 @@ class NewTodoDialog extends StatelessWidget {
         TextButton(
           style: ButtonStyle(
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue)),
+              backgroundColor:
+                  MaterialStateProperty.all<Color>(Colors.purple.shade800)),
           child: Text('Cancelar'),
           onPressed: () {
             Navigator.of(context).pop();
@@ -26,7 +27,8 @@ class NewTodoDialog extends StatelessWidget {
         TextButton(
           style: ButtonStyle(
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue)),
+              backgroundColor:
+                  MaterialStateProperty.all<Color>(Colors.purple.shade800)),
           child: Text('Agregar'),
           onPressed: () {
             final todo = new Todo(title: controller.value.text);
